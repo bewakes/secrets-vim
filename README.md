@@ -12,7 +12,7 @@ writing.
 I want something very handy to encrypt/decrypt but also easily writeable and modifiable. I
 came up with this idea - ***why not just create a vim plugin that just encrypts
 the text while I am typing(that's going to be too much though) or when I save
-the file?*** That sounded okay, and here is it.
+the file?*** That sounded okay, and here it is.
 
 ## Installation
 It's very easy. Install [Plug](https://github.com/junegunn/vim-plug). And in
@@ -35,13 +35,16 @@ When you are done with the text run `:EncryptText` and TADA!!
 To Decrypt the text run `:DecryptText` and TADA!!
 
 If you want to change the secret then run `:SetSecret`. **But** this will only
-let you change if there is no unencrypted text.
+let you change if there is no encrypted text.
 
 
 ## TODOs
-- Make some auto commands efficient.
-- Auto save on write. Make this configurable.
-- Unicode Support without breaking current encryption.
+* [ ] Versioning of encryption/decryption. Because if encryption method changes,
+    previous encrypted data should be decryptable.
+* [ ] Make some auto commands efficient.
+* [ ] Auto save on write. Make this configurable.
+* [ ] Unicode Support.
+
 
 
 ## CONTRIBUTIONS
